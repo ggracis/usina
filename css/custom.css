@@ -208,3 +208,15 @@ label,
   .pricing-action{
     text-align: center;
   } */
+
+@media (max-width: 629px) {
+  .hideonmobile {
+    display: none;
+  }
+}
+
+@media (max-width: 629px) {
+  .showonmobile {
+    display: block !important;
+  }
+}
