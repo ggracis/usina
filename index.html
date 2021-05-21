@@ -46,11 +46,22 @@
             <!-- Logo
 						============================================= -->
             <div id="logo">
-              <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450.png"><img
-                  src="images/logo_450.png" alt="Usina - Data Services" /></a>
-              <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450.png"><img
-                  src="images/logo_450.png" alt="Usina - Data Services" /></a>
+              <div id="logo_dark">
+                <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450.png">
+                  <img src="images/logo_450.png" alt="Usina - Data Services" />
+                  </a>
+                <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450.png"><img
+                    src="images/logo_450.png" alt="Usina - Data Services" /></a>
+                  </div>
+              <div id="logo_light" style="display: none">
+              <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450_b.png">
+                <img src="images/logo_450_b.png" alt="Usina - Data Services" />
+                </a>
+              <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450_b.png"><img
+                  src="images/logo_450_b.png" alt="Usina - Data Services" /></a>
+                </div>
             </div>
+            
             <!-- #logo end -->
 
             <div id="primary-menu-trigger">
@@ -125,7 +136,8 @@
         <div class="vertical-middle slider-element-fade">
           <div class="container-fluid py-5">
             <div class="heading-block text-center border-bottom-0">
-              <img src="images/logo_450.png" alt="USINA - Data as a Service" class="hideonmobile" />
+              <img id="logo_slide_dark" src="images/logo_450.png" alt="USINA - Data as a Service" class="hideonmobile" />
+              <img id="logo_slide_light" src="images/logo_450_b.png" alt="USINA - Data as a Service" class="hideonmobile" style="display: none;" />
               <!-- <h1 style="font-size: 3.5rem; line-height: 2rem">USINA</h1>
                 <h2>Data as a Service</h2> -->
               <span style="font-size: 1.5em">
@@ -1190,11 +1202,22 @@
     $("#darkTheme").click(function () {
       $("#darkTheme").toggle();
       $("#lightTheme").toggle();
+      $("#logo_dark").toggle();
+      $("#logo_light").toggle();
+      $("#logo_slide_dark").toggle();
+      $("#logo_slide_light").toggle();
+      $('#slider').css("background-image", "url(imgs/charts_b.jpg)");  
+
       $("#wrapper").addClass("dark");
     });
     $("#lightTheme").click(function () {
       $("#darkTheme").toggle();
       $("#lightTheme").toggle();
+      $("#logo_dark").toggle();
+      $("#logo_light").toggle();
+      $("#logo_slide_dark").toggle();
+      $("#logo_slide_light").toggle();
+      $('#slider').css("background-image", "url(imgs/charts.jpg)");  
       $("#wrapper").removeClass("dark");
     });
   </script>
