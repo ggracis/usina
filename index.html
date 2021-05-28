@@ -49,19 +49,19 @@
               <div id="logo_dark">
                 <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450.png">
                   <img src="images/logo_450.png" alt="Usina - Data Services" />
-                  </a>
+                </a>
                 <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450.png"><img
                     src="images/logo_450.png" alt="Usina - Data Services" /></a>
-                  </div>
+              </div>
               <div id="logo_light" style="display: none">
-              <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450_b.png">
-                <img src="images/logo_450_b.png" alt="Usina - Data Services" />
+                <a href="index.html" class="standard-logo" data-dark-logo="images/logo_450_b.png">
+                  <img src="images/logo_450_b.png" alt="Usina - Data Services" />
                 </a>
-              <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450_b.png"><img
-                  src="images/logo_450_b.png" alt="Usina - Data Services" /></a>
-                </div>
+                <a href="index.html" class="retina-logo" data-dark-logo="images/logo_450_b.png"><img
+                    src="images/logo_450_b.png" alt="Usina - Data Services" /></a>
+              </div>
             </div>
-            
+
             <!-- #logo end -->
 
             <div id="primary-menu-trigger">
@@ -85,7 +85,7 @@
                     <div>Inicio</div>
                   </a>
                 </li>
-                <li class="menu-item">
+            <!--     <li class="menu-item">
                   <a class="menu-link" href="#" data-href="#productos">
                     <div>Productos</div>
                   </a>
@@ -94,7 +94,7 @@
                   <a class="menu-link" href="#" data-href="#ejemplos">
                     <div>Ejemplos</div>
                   </a>
-                </li>
+                </li> -->
                 <li class="menu-item">
                   <a class="menu-link" href="https://api.usinadataservices.com.ar/docs">
                     <div>Developers</div>
@@ -127,7 +127,9 @@
       <div class="header-wrap-clone"></div>
     </header>
     <!-- #header end -->
-
+    
+    <!-- Slider
+		============================================= -->
     <section id="slider" class="slider-element slider-parallax min-vh-60 min-vh-md-100 dark include-header" style="
           background: url(imgs/charts.jpg) center center no-repeat;
           background-size: cover;
@@ -135,12 +137,14 @@
       <div class="slider-inner">
         <div class="vertical-middle slider-element-fade">
           <div class="container-fluid py-5">
-            <div class="heading-block text-center border-bottom-0">
-              <img id="logo_slide_dark" src="images/logo_450.png" alt="USINA - Data as a Service" class="hideonmobile" />
-              <img id="logo_slide_light" src="images/logo_450_b.png" alt="USINA - Data as a Service" class="hideonmobile" style="display: none;" />
+            <div class="heading-block text-center border-bottom-0 m-2">
+              <img id="logo_slide_dark" src="images/logo_450.png" alt="USINA - Data as a Service"
+                class="hideonmobile" />
+              <img id="logo_slide_light" src="images/logo_450_b.png" alt="USINA - Data as a Service"
+                class="hideonmobile" style="display: none;" />
               <!-- <h1 style="font-size: 3.5rem; line-height: 2rem">USINA</h1>
                 <h2>Data as a Service</h2> -->
-              <span style="font-size: 1.5em">
+              <span style="font-size: 1.3em; line-height: 1.3em;">
                 Generamos datos en forma confiable a partir de la información
                 obtenida en las plataformas públicas
               </span>
@@ -148,68 +152,64 @@
 
             </div>
 
-            <div class="text-justify col-md-6 container-fluid">
-              <span style="font-size: 1.2em">
-                Desarrollamos herramientas para utilizar estos datos, tanto para usuarios finales como para developers de aplicaciones.
+            <div class="d-flex justify-content-center">
+            <div class="tabs clearfix col-md-6" id="tab-3">
+              <span style="font-size: 1.1em">
+                Desarrollamos herramientas para utilizar estos datos, tanto para usuarios finales como para developers
+                de aplicaciones.
               </span>
-<div class="row">
+              <ul class="tab-nav tab-nav2 d-flex justify-content-center">
+                <li style="display: none;"><a href="#info"></a></li>
+                <li><a href="#developers" style="font-weight: 200;">Developers</a></li>
+                <li><a href="#usuarios"  style="font-weight: 200;">Usuarios finales</a></li>
+              </ul>
 
-              <div class="toggle  col-md-6">
-								<div class="text-center toggle-header">
-									<div class=" toggle-border toggle-title" style="font-size: 1.2em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">
-										Developers
-									</div>
-                  
-									
-								</div>
-								<div class="toggle-content"> Usina Data Service te ofrece una API para que puedas
+              <div class="tab-container text-justify" style="font-size: 0.9em; line-height: 1em;">
+                <div class="tab-content clearfix" id="info">
+                </div>
+                <div class="tab-content clearfix" id="developers">
+                  Usina Data Service te ofrece una API para que puedas
                   interactuar con los portales de AFIP, BNA, IIBB. Con Usina
                   Data Service la inestabilidad de los sistemas y la
                   dificultad de filtrar la información ya no son un
                   problema: obtené los datos que necesitás para diseñar tus
                   aplicaciones, estructurados y en forma segura a partir de
                   la información de las plataformas públicas
-                
-                <div class="col-12 center mt-2">  <a class="active button button-border button-reveal button-large button-light text-right"
-                  href="https://front.usinadataservices.com.ar" data-toggle="tab"
-                  style="font-size: 1.2em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">Probalo</a></div>
-                
+
+                  <div class="col-12 center mt-2"> <a
+                      class="active button button-border button-reveal button-medium button-light text-right"
+                      href="https://front.usinadataservices.com.ar" data-toggle="tab"
+                      style="font-size: 1em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">Probalo</a>
+                  </div>
                 </div>
-							</div>
-
-              <div class="toggle col-md-6">
-								<div class="toggle-header">
-									
-									<div class="text-center  toggle-border toggle-title" style="font-size: 1.2em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">Usuarios finales
-									</div>
-								</div>
-								<div class="toggle-content"><p>
-                  Usina Data Service te ofrece una interfaz intuitiva para
-                  que puedas visualizar y analizar la información de los
-                  portales de AFIP, BNA, IIBB. Con Usina Data Service la
-                  inestabilidad de los sistemas y la dificultad de filtrar
-                  la información ya no son un problema: obtené, filtrá y
-                  combiná en forma masiva los datos de las plataformas
-                  públicas para crear tablas, gráficos, hojas de cálculo.
-                </p>
-                <div class="col-12 center mt-2"> <a class="active button button-border button-reveal button-large button-light text-right"
-                href="https://front.usinadataservices.com.ar" data-toggle="tab"
-                style="font-size: 1.2em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">Probalo</a></div>
+                <div class="tab-content clearfix" id="usuarios">
+                  <p>
+                    Usina Data Service te ofrece una interfaz intuitiva para
+                    que puedas visualizar y analizar la información de los
+                    portales de AFIP, BNA, IIBB. Con Usina Data Service la
+                    inestabilidad de los sistemas y la dificultad de filtrar
+                    la información ya no son un problema: obtené, filtrá y
+                    combiná en forma masiva los datos de las plataformas
+                    públicas para crear tablas, gráficos, hojas de cálculo.
+                  </p>
+                  <div class="col-12 center mt-2"> <a
+                      class="active button button-border button-reveal button-medium button-light text-right"
+                      href="https://front.usinadataservices.com.ar" data-toggle="tab"
+                      style="font-size: 1em; font-weight: 700 font-weight: 100; font-family: 'DIN-GLight';">Probalo</a>
+                  </div>
+                </div>
+     
               </div>
-							</div>
-            </div>
 
+            </div></div>
 
-             
-        
-
-
-
-            </div>
+          
           </div>
         </div>
       </div>
     </section>
+        <!-- /Slider
+		============================================= -->
 
     <!-- Content
 		============================================= -->
@@ -302,7 +302,7 @@
 
           <!-- Productos
 		============================================= -->
-          <div id="productos" class="heading-block text-center page-section p-3 m-3">
+    <!--       <div id="productos" class="heading-block text-center page-section p-3 m-3">
             <h2>Features Overview</h2>
             <span>Some of the Features that are gonna blow your mind off</span>
           </div>
@@ -339,7 +339,7 @@
               </div>
             </div>
 
-           
+
 
             <div class="col-md-6 col-lg-4">
               <div class="feature-box fbox-plain">
@@ -432,24 +432,24 @@
               </div>
             </div>
             <div class="col-md-6 col-lg-4 pr-2 pl-2">
-               
+
               <div class="fbox-content">
                 <h3>Que más podemos ofrecerte?</h3>
                 <p>
-                   Aceptamos sugerencias de fuentes de información para incorporar a nuestra solución
+                  Aceptamos sugerencias de fuentes de información para incorporar a nuestra solución
                 </p>
               </div>
               <form id="widget-subscribe-form" action="" method="post" class="mb-0">
-                <input type="text" id="sugerencia" name="sugerencia"
-                class="form-control required mb-2 mt-2" placeholder="Tu sugerencia" />
+                <input type="text" id="sugerencia" name="sugerencia" class="form-control required mb-2 mt-2"
+                  placeholder="Tu sugerencia" />
                 <div class="input-group mx-auto">
-                  
+
                   <div class="input-group-prepend">
                     <div class="input-group-text">
                       <i class="icon-email2"></i>
                     </div>
                   </div>
-                 
+
 
                   <input type="email" id="widget-subscribe-form-email" name="widget-subscribe-form-email"
                     class="form-control required email" placeholder="Email" />
@@ -461,15 +461,15 @@
                   </div>
                 </div>
               </form>
-              
+
             </div>
-          </div>
+          </div> -->
           <!-- /Productos
 		============================================= -->
 
-          <div class="divider divider-sm divider-center">
+         <!--  <div class="divider divider-sm divider-center">
             <i class="icon-circle"></i>
-          </div>
+          </div> -->
 
           <!-- Precios
 		============================================= -->
@@ -677,7 +677,7 @@
 
           <!-- Product specifications
 		============================================= -->
-          <div class="container clearfix">
+<!--           <div class="container clearfix">
             <div id="ejemplos" class="heading-block text-center page-section p-3 m-3">
               <h2>Product Specifications</h2>
               <span>Complete list of the Tech Specifications for your
@@ -818,11 +818,11 @@
               </div>
             </div>
           </div>
+ -->
 
-
-            <!-- Bloque dibujo
+          <!-- Bloque dibujo
 		============================================= -->
-<!-- 
+          <!-- 
           <div class="container">
             <div class="line"></div>
 
@@ -882,7 +882,7 @@
               <div class="clear"></div>
             </div>
           </div> -->
-           <!-- /Bloque dibujo
+          <!-- /Bloque dibujo
 		============================================= -->
 
           <div class="section footer-stick">
@@ -1123,7 +1123,7 @@
           <div class="row col-mb-30">
             <div class="col-md-6 text-center text-md-left">
               Copyrights &copy; 2021 All Rights Reserved by Usina<br />
-             
+
             </div>
 
             <div class="col-md-6 text-center text-md-right">
@@ -1206,7 +1206,7 @@
       $("#logo_light").toggle();
       $("#logo_slide_dark").toggle();
       $("#logo_slide_light").toggle();
-      $('#slider').css("background-image", "url(imgs/charts_b.jpg)");  
+      $('#slider').css("background-image", "url(imgs/charts_b.jpg)");
 
       $("#wrapper").addClass("dark");
     });
@@ -1217,7 +1217,7 @@
       $("#logo_light").toggle();
       $("#logo_slide_dark").toggle();
       $("#logo_slide_light").toggle();
-      $('#slider').css("background-image", "url(imgs/charts.jpg)");  
+      $('#slider').css("background-image", "url(imgs/charts.jpg)");
       $("#wrapper").removeClass("dark");
     });
   </script>
