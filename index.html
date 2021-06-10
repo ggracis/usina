@@ -38,7 +38,7 @@
   <div id="wrapper" class="clearfix">
     <!-- Header
 		============================================= -->
-    <header id="header" class="dark full-header transparent-header header-size-custom" data-sticky-shrink="false"
+    <header id="header" class=" full-header transparent-header header-size-custom" data-sticky-shrink="false"
       data-mobile-sticky="true">
       <div id="header-wrap">
         <div class="container">
@@ -79,7 +79,7 @@
             <!-- Primary Navigation
 						============================================= -->
             <nav class="primary-menu">
-              <ul class="menu-container one-page-menu dark">
+              <ul id="menu" class="menu-container one-page-menu">
                 <li class="menu-item current">
                   <a class="menu-link" href="#" data-href="#header">
                     <div>Inicio</div>
@@ -1200,25 +1200,50 @@
 	============================================= -->
   
   <script>
+  
+
     $("#darkTheme").click(function () {
+    // Botón menu
       $("#darkTheme").toggle();
       $("#lightTheme").toggle();
+    // Logo menu
       $("#logo_dark").toggle();
       $("#logo_light").toggle();
+    // Logo slide
+    $(function() {      
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    if (!isMobile) {
       $("#logo_slide_dark").toggle();
       $("#logo_slide_light").toggle();
+    }
+  });
+    // Fondo slide
       $('#slider').css("background-image", "url(imgs/charts.jpg)");
-
+    // Header y contenido
+      $("#header").addClass("dark");
       $("#wrapper").addClass("dark");
     });
     $("#lightTheme").click(function () {
+      // Botón menu
       $("#darkTheme").toggle();
       $("#lightTheme").toggle();
+
+      // Logo menu
       $("#logo_dark").toggle();
       $("#logo_light").toggle();
+
+      // Logo slide
+      $(function() {      
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+      if (!isMobile) {
       $("#logo_slide_dark").toggle();
       $("#logo_slide_light").toggle();
+      }  });
+      // Fondo slide
       $('#slider').css("background-image", "url(imgs/charts_b.jpg)");
+     
+      // Header y contenido
+      $("#header").removeClass("dark");
       $("#wrapper").removeClass("dark");
     });
   </script>
